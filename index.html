@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/disable.min.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics         <script async src="https://www.googletagmanager.com/gtag/js?id=G-536TXLCHVV"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-536TXLCHVV', { 'anonymize_ip': true, 'allow_google_signals': false, 'allow_ad_personalization_signals': false });
+
+        </script>
+        -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+        <link rel="canonical" href="https://almanyamaas.com" />
+        <title>Almanya Maaş Hesapla | Almanya'daki maaşınızı kolayca hesaplayın.</title>
+        <meta name="description" content="Almanya maaş hesaplama aracı ile net maaşınızı kolayca hesaplayın. Almanya'daki net maaşınızı brüt maaşınız üzerinden hesaplayın." />
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon.png?v=2">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png?v=2">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png?v=2">
+        <link rel="manifest" href="images/site.webmanifest?v=2">
+        <link rel="mask-icon" href="images/safari-pinned-tab.svg?v=2" color="#5bbad5">
+        <link rel="shortcut icon" href="images/favicon.ico?v=2">
+        <meta name="msapplication-TileColor" content="#ffc40d">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Favicons -->
+
+        <link rel="stylesheet" href="css/styles.min.css">
+    </head>
+    <body>
+        <header>
+            <div class = "header-container-new">
+                <div class="header-wrapper-new">
+                    <a href="./" class="header-nav-link">&#127465;&#127466;  ALMANYA MAAŞ  &#128182;</a>
+                </div>
+            </div>
+        </header>
+    <main>
+        <div class = "title">
+            <div class = "title-wrapper">
+                <div>
+                    <h1>
+                        Almanya maaş hesaplama aracı ile aylık net maaşınızı kolayca hesaplayın.<br class="mobile-break">
+                    </h1>
+                    <p>Sosyal güvenlik ödemelerinizi ve vergi kalemlerini detaylı olarak görün.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="calculator-container">
+            <div class="calculator-container-wrapper">
+                <div class="rendered-form calculator-form">
+                    <div class="calculator-form-item-wrapper formbuilder-text form-group">
+                        <label id="labelSalary" for="inputSalary" class="calculator-form-item-label form-label formbuilder-text-label">Brüt Maaş (€)</label>
+                        <input id="inputSalary" class="form-control calculator-form-item-text" type="number" min="1" max="1000000000">
+                        <small class="calculator-form-item-invalid-text" id="textSalaryInvalid">Lütfen geçerli bir brüt maaş giriniz.</small>
+                    </div>
+                    
+                    <div class="calculator-form-item-wrapper form-group">
+                        <label for="accountPeriodRadioGroup" class="calculator-form-item-label form-label">Hesap Dönemi</label>
+                        <div id="accountPeriodRadioGroup" class="calculator-form-item-radio-group radio-group">
+                            <div class="calculator-form-item-radio">
+                                <input name="inputAccountPeriod" id="accountPeriodRadioOption0" value="1" type="radio">
+                                <label for="accountPeriodRadioOption0">Aylık</label>
+                            </div>
+                            <div class="calculator-form-item-radio">
+                                <input name="inputAccountPeriod" id="accountPeriodRadioOption1" checked="checked" value="2" type="radio">
+                                <label for="accountPeriodRadioOption1">Yıllık</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--
+                    <div class="calculator-form-item-wrapper">
+                        <label for="radio122" class="calculator-form-item-label formbuilder-radio-group-label">Hesap Dönemi</label>
+                        <ul class="calculator-form-item-radio-group" name="radio122">
+                            <li><input type="radio" id="radio1" type="radio" name="radio1"><label for="radio1">Aylık</label></li>
+                            <li><input type="radio" id="radio2" type="radio" name="radio2"><label for="radio2">Yıllık</label></li>
+                        </ul>
+                    </div>
+                    -->
+
+                    <div class="calculator-form-item-wrapper  formbuilder-text form-group">
+                        <label for="selectAccountYear" class="calculator-form-item-label form-label formbuilder-text-label">Hesap Yılı</label>
+                        <select class="form-select form-control calculator-form-item-select-year" id="selectAccountYear">
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022" selected="true">2022</option>
+                        </select>
+                    </div>
+                    <div class="calculator-form-item-wrapper formbuilder-text form-group">
+                        <label id="labelTaxFree" for="inputTaxFree" class="calculator-form-item-label form-label">Vergisiz Ödenek (€)</label>
+                        <input id="inputTaxFree" type="text" class="form-control calculator-form-item-text">
+                        <small class="calculator-form-item-invalid-text" id="textTaxFreeInvalid">Lütfen geçerli ödenek değeri giriniz. Eğer vergisiz ödeneğiniz yok ise 0 girebilirsiniz.</small>
+                    </div>
+                    <div class="calculator-form-item-wrapper fcalculator-form-item-wrapper form-group">
+                        <label for="selectTaxClass" class="calculator-form-item-label form-label formbuilder-select-label">Vergi Sınıfı</label>
+                        <select class="form-select form-control calculator-form-item-select" id="selectTaxClass">
+                            <option value="1" selected="true">Vergi Sınıfı I</option>
+                            <option value="2">Vergi Sınıfı II</option>
+                            <option value="3">Vergi Sınıfı III</option>
+                            <option value="4">Vergi Sınıfı IV</option>
+                            <option value="5">Vergi Sınıfı V</option>
+                            <option value="6">Vergi Sınıfı VI</option>
+                        </select>
+                    </div>
+                    <div class="calculator-form-item-wrapper form-group">
+                        <label for="churchTaxRadioGroup" class="calculator-form-item-label formbuilder-radio-group-label">Kilise Vergisi</label>
+                        <div id="churchTaxRadioGroup" class="calculator-form-item-radio-group radio-group">
+                            <div class="formbuilder-radio">
+                                <input name="inputChurchTax" id="churchTaxRadioOption0" value="J" type="radio">
+                                <label for="churchTaxRadioOption0">Evet</label>
+                            </div>
+                            <div class="formbuilder-radio">
+                                <input name="inputChurchTax"  id="churchTaxRadioOption1" checked="checked" value="N" type="radio">
+                                <label for="churchTaxRadioOption1">Hayır</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator-form-item-wrapper formbuilder-select form-group">
+                        <label for="selectState" class="calculator-form-item-label formbuilder-select-label">Eyalet</label>
+                        <select class="form-control calculator-form-item-select" id="selectState">
+                            <option value="BW" selected="true">Baden-Württemberg</option>
+                            <option value="BY">Bayern</option>
+                            <option value="BE">Berlin</option>
+                            <option value="BB">Brandenburg</option>
+                            <option value="HB">Bremen</option>
+                            <option value="HH">Hamburg</option>
+                            <option value="HE">Hessen</option>
+                            <option value="MV">Mecklenburg-Vorpommern</option>
+                            <option value="NI">Niedersachsen</option>
+                            <option value="NW">Nordrhein-Westfalen</option>
+                            <option value="RP">Rheinland-Pfalz</option>
+                            <option value="SL">Saarland</option>
+                            <option value="SN">Sachsen</option>
+                            <option value="ST">Sachsen-Anhalt</option>
+                            <option value="SH">Schleswig-Holstein</option>
+                            <option value="TH">Thüringen</option>
+                        </select>
+                    </div>
+                    <!--
+                    <div class="calculator-form-item-wrapper form-group">
+                        <label id="labelAge" for="inputAge" class="form-label">Yaş</label>
+                        <input id="inputAge" type="text" max="75" min="15" class="form-text form-control calculator-form-item-text-age" min="15" max="75">
+                        <small id="textAgeInvalid" class="calculator-form-item-invalid-text">Lütfen geçerli bir yaş değeri giriniz.</small>
+                        <small id="textAgeRangeInvalid" class="calculator-form-item-invalid-text">Yaş değeri 15 ve 75 arasında olmalıdır.</small>
+                    </div>
+                    -->
+                    <div class="calculator-form-item-wrapper form-group">
+                        <label for="childrenRadioGroup" class="calculator-form-item-label">Çocuğunuz var mı?</label>
+                        <div id="childrenRadioGroup" class="calculator-form-item-radio-group radio-group">
+                            <div class="calculator-form-item-radio">
+                                <input name="inputChildren" access="false" id="childrenRadioOption0" value="1" type="radio">
+                                <label for="childrenRadioOption0">Evet</label>
+                            </div>
+                            <div class="formbuilder-radio">
+                                <input name="inputChildren" access="false" id="childrenRadioOption1" checked="checked" value="2" type="radio">
+                                <label for="childrenRadioOption1">Hayır</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="divNrOfChildren" class="calculator-form-item-wrapper form-group hidden">
+                        <label for="selectNrOfChildren" class="calculator-form-item-label formbuilder-select-label">Vergi Kartındaki Çocuk Sayısı</label>
+                        <select class="form-control calculator-form-item-select-child" id="selectNrOfChildren">
+                            <option value="0" selected="true">0</option>
+                            <option value="0.5">0.5</option>
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3">3</option>
+                            <option value="3.5">3.5</option>
+                            <option value="4">4</option>
+                            <option value="4.5">4.5</option>
+                            <option value="5">5</option>
+                            <option value="5.5">5.5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <div class="calculator-form-item-wrapper form-group">
+                        <label for="selectHealthInsurance" class="calculator-form-item-label formbuilder-select-label">Sağlık Sigortası</label>
+                        <select id="selectHealthInsurance" class="form-control calculator-form-item-select">
+                            <option value="1" selected="true">Zorunlu sigorta</option>
+                            <option value="2">Özel sağlık sigortası</option>
+                            <!--<option value="3">Zorunlu sigorta, gönüllü olarak</option>-->
+                        </select>
+                    </div>
+                    <div id="divHealthInsuranceRate" class="calculator-form-item-wrapper form-group">
+                        <label id="labelHealthInsuranceRate" for="inputHealthInsuranceRate" class="calculator-form-item-label form-label formbuilder-text-label">Sağlık Sigortası Katkı Payı (%)</label>
+                        <input id="inputHealthInsuranceRate" type="number" value="14.6" class="form-text form-control calculator-form-item-text-percent" step=".01">
+                        <small id="textHealthInsuranceRateInvalid" class="calculator-form-item-invalid-text">Katkı payı minumum %14.6, maksimum %18 olmalıdır. Lütfen geçerli bir değer giriniz.</small>
+                    </div>
+
+                    <div id="divHealthInsuranceMonthlyFee" class="calculator-form-item-wrapper form-group hidden">
+                        <label id="labelHealthInsuranceMonthlyFee" for="inputHealthInsuranceMonthlyFee" class="calculator-form-item-label form-label formbuilder-text-label">Aylık Prim (€)</label>
+                        <input id="inputHealthInsuranceMonthlyFee" type="number" value="0" class="form-text form-control calculator-form-item-text">
+                        <small id="textHealthInsuranceMonthlyFeeInvalid" class="calculator-form-item-invalid-text">Aylık prim minumum 2€, maksimum 100000€ olmalıdır. Lütfen geçerli bir değer giriniz.</small>
+                    </div>
+                    <!--
+                    <div class="calculator-form-item-wrapper">
+                        <label for="selectPension" class="calculator-form-item-label formbuilder-select-label">Emeklilik sigortası</label>
+                        <select class="form-control calculator-form-item-select" id="selectPension">
+                            <option value="1" selected="true">Zorunlu sigorta</option>
+                            <option value="2">Sigortadan muaf</option>
+                            <option value="3">Yalnızca iş veren katkısı</option>
+                            <option value="4">Yalnızca işçi payı</option>
+                        </select>
+                    </div>
+                    -->
+                    <!--
+                    <div class="calculator-form-item-wrapper">
+                        <label for="selectUnemployment" class="calculator-form-item-label formbuilder-select-label">İşsizlik Sigortası</label>
+                        <select class="form-control calculator-form-item-select" id="selectUnemployment">
+                            <option value="1" selected="true">Zorunlu sigorta</option>
+                            <option value="2">Sigortadan muaf</option>
+                            <option value="3">Yalnızca iş veren katkısı</option>
+                            <option value="4">Yalnızca işçi payı</option>
+                        </select>
+                    </div>
+                    -->
+                    <div class="calculator-form-item-wrapper">
+                        <button id="buttonCalculate" type="button" class="btn btn-primary btn-lg calculator-form-item-button">Hesapla</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="divResultContainer" class="result-container">
+            <div class="result-container-wrapper">
+                <h4>Hesap Detayı:</h4>
+                <hr class="result-line">
+                <div class="callout success">
+                    <table class="steuerbescheid nostyle smallstack table table-hover">
+                        <thead>
+                            <tr>
+                                <th class="" width="50%"></th>
+                                <th class="" width="25%">Aylık (€)</th>
+                                <th class="" width="25%">Yıllık (€)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class=""><b>Brüt maaş:</b></td>
+                                <td class="">
+                                    <span class="result-table-data-period"></span>
+                                    <b id="resultGrossMonthlySalary"></b>
+                                </td>
+                                <td class=" ">
+                                    <span class="result-table-data-period"></span>
+                                    <b id="resultGrossYearlySalary"></b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="result-table-data-title" colspan="3"><b>Sosyal güvenlik katkıları:</b></td>
+                            </tr>
+                            <tr>
+                                <td class=""> - Emeklilik Sigortası</td>
+                                <td id="resultMonthlyPension" class=" ">
+                                    <span class="result-table-data-period">Aylık</span>
+                                </td>
+                                <td id="resultYearlyPension" class=" ">
+                                    <span class="result-table-data-period">Yıllık</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=""> - İşsizlik sigortası</td>
+                                <td id="resultMonthlyUnemployment" class="">
+                                    <span class="result-table-data-period">Aylık</span>
+                                </td>
+                                <td id="resultYearlyUnemployment" class="">
+                                    <span class="result-table-data-period">Yıllık</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=""> - Bakım sigortası</td>
+                                <td id="resultMonthlyNursing" class="">
+                                    <span class="result-table-data-period">Aylık</span>
+                                </td>
+                                <td id="resultYearlyNursing" class=" ">
+                                    <span class="result-table-data-period">Yıllık</span>
+                                </td>
+                            </tr>
+                            <tr id="tr_krankenversicherung">
+                                <td class=""> - Sağlık sigortası</td>
+                                <td id="resultMonthlyHealth" class=" ">
+                                    <span class="result-table-data-period">Aylık</span>
+                                </td>
+                                <td id="resultYearlyHealth" class=" ">
+                                    <span class="result-table-data-period">Yıllık</span>
+                                </td>
+                            </tr>
+                            <tr class="result-table-row-sum-line rechner_ergebniszeile">
+                                <td class=""><b>Toplam sosyal güvenlik katkısı:</b></td>
+                                <td class=" ">
+                                    <span class="result-table-data-period"></span>
+                                    <b id="resultMonthlyTotalSocial"></b>
+                                </td>
+                                <td class="">
+                                    <span class="result-table-data-period"></span>
+                                    <b id="resultYearlyTotalSocial"></b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="result-table-data-title" colspan="3"><b>Vergiler:</b></td>
+                            </tr>
+                            <tr>
+                                <td class=""> - Gelir vergisi</td>
+                                <td id="resultMonthlyIncomeTax" class="">
+                                    <span class="result-table-data-period">Aylık</span>
+                                </td>
+                                <td id="resultYearlyIncomeTax" class=" ">
+                                    <span class="result-table-data-period">Yıllık</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=""> - Doğu Almanya dayanışma vergisi</td>
+                                <td id="resultMonthlySolidarityTax" class=" ">
+                                    <span class="result-table-data-period">Aylık</span>
+                                </td>
+                                <td id="resultYearlySolidarityTax" class=" ">
+                                    <span class="result-table-data-period">Yıllık</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=""> - Kilise vergisi</td>
+                                <td id="resultMonthlyChurchTax" class="">
+                                    <span class="result-table-data-period">Aylık</span>
+                                </td>
+                                <td id="resultYearlyChurchTax" class="">
+                                    <span class="result-table-data-period">Yıllık</span>
+                                </td>
+                            </tr>
+
+                            <tr id="tr_steuern" class="result-table-row-sum-line">
+                                <td class=""><b>Toplam vergiler:</b></td>
+                                <td class="">
+                                    <span class="result-table-data-period"></span>
+                                    <b id="resultMonthlyTotalTax"></b>
+                                </td>
+                                <td class="">
+                                    <span class="result-table-data-period"></span>
+                                    <b id="resultYearlyTotalTax"></b>
+                                </td>
+                            </tr>
+                            
+                            <tr class="result-table-row-sum-line rechner_ergebniszeile">
+                                <td class="result-table-data-title"><b>Net maaş:</b></td>
+                                <td class="">
+                                    <span class="result-table-data-period"></span>
+                                    <b id="resultMonthlyNetSalary"></b>
+                                </td>
+                                <td class="">
+                                    <span class="result-table-data-period"></span>
+                                    <b id="resultYearlyNetSalary"></b>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--
+    <footer class = "footer-container">
+        <div class="footer">
+            <nav class="container">
+                <div class="footer-date">
+                    <div class = "footer-date-link-wrapper">
+                        <p id="yearP" class="dater">
+                            <span>
+                                <script>
+                                    document.getElementById("yearP").appendChild(document.createTextNode(new Date().getFullYear()));
+                                </script>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class = "footer-link-wrapper">
+                        <a href="./pages/disclaimer.html">
+                            Haftungsausschluss
+                        </a>
+                    </div>
+                    <div class = "footer-link-wrapper">
+                        <a href="./pages/about.html">
+                            Über uns
+                        </a>
+                    </div>
+                    <div class = "footer-link-wrapper">
+                        <a href="./pages/privacy.html">
+                            Datenschutz
+                        </a>
+                    </div>
+                </div>
+                
+            </nav>
+        </div>
+    </footer>
+    -->
+
+        <!--
+        <div id="cookie-banner" class="cookie-container">
+            <div class="cookie">
+                <div class="cookie-text">Wir verwenden Cookies für Analysen, weitere Informationen finden Sie auf <a href="pages/privacy.html">unserer Pivacy-Seite</a>. Wir lesen keine anderen Daten aus.</div>
+                <div id="cookie-close" class="cookie-button">X</div>
+            </div>
+        </div>
+        -->
+        
+        <script src="js/calc.min.js"></script>
+        <script src="js/validate.min.js"></script>
+        
+    </body>
+</html>
