@@ -62,7 +62,7 @@
                 <div class="rendered-form calculator-form">
                     <div class="calculator-form-item-wrapper formbuilder-text form-group">
                         <label id="labelSalary" for="inputSalary" class="calculator-form-item-label form-label formbuilder-text-label">Brüt Maaş (€)</label>
-                        <input id="inputSalary" class="form-control calculator-form-item-text" inputmode="decimal" type="number" min="1" max="1000000000">
+                        <input id="inputSalary" class="form-control calculator-form-item-text" inputmode="number" type="number" onkeypress="return event.charCode >= 48 && event.charCode <= 57" min="1" max="1000000000">
                         <small class="calculator-form-item-invalid-text" id="textSalaryInvalid">Lütfen geçerli bir brüt maaş giriniz.</small>
                     </div>
                     
@@ -102,7 +102,7 @@
                     </div>
                     <div class="calculator-form-item-wrapper formbuilder-text form-group">
                         <label id="labelTaxFree" for="inputTaxFree" class="calculator-form-item-label form-label">Vergisiz Ödenek (€)</label>
-                        <input id="inputTaxFree" inputmode="decimal" type="number" class="form-control calculator-form-item-text">
+                        <input id="inputTaxFree" inputmode="number" type="number" value="0" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="form-control calculator-form-item-text">
                         <small class="calculator-form-item-invalid-text" id="textTaxFreeInvalid">Lütfen geçerli ödenek değeri giriniz. Eğer vergisiz ödeneğiniz yok ise 0 girebilirsiniz.</small>
                     </div>
                     <div class="calculator-form-item-wrapper fcalculator-form-item-wrapper form-group">
@@ -200,12 +200,12 @@
                     <div id="divHealthInsuranceRate" class="calculator-form-item-wrapper form-group">
                         <label id="labelHealthInsuranceRate" for="inputHealthInsuranceRate" class="calculator-form-item-label form-label formbuilder-text-label">Sağlık Sigortası Katkı Payı (%)</label>
                         <input id="inputHealthInsuranceRate" inputmode="decimal" type="number" value="14.6" class="form-text form-control calculator-form-item-text-percent" step=".01">
-                        <small id="textHealthInsuranceRateInvalid" class="calculator-form-item-invalid-text">Katkı payı minumum %14.6, maksimum %18 olmalıdır. Lütfen geçerli bir değer giriniz.</small>
+                        <small id="textHealthInsuranceRateInvalid" class="calculator-form-item-invalid-text">Katkı payı minumum %14,6, maksimum %18 olmalıdır. Lütfen geçerli bir değer giriniz.</small>
                     </div>
 
                     <div id="divHealthInsuranceMonthlyFee" class="calculator-form-item-wrapper form-group hidden">
                         <label id="labelHealthInsuranceMonthlyFee" for="inputHealthInsuranceMonthlyFee" class="calculator-form-item-label form-label formbuilder-text-label">Aylık Prim (€)</label>
-                        <input id="inputHealthInsuranceMonthlyFee" inputmode="decimal" type="number" value="0" class="form-text form-control calculator-form-item-text">
+                        <input id="inputHealthInsuranceMonthlyFee" inputmode="number" type="number" value="0" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="form-text form-control calculator-form-item-text">
                         <small id="textHealthInsuranceMonthlyFeeInvalid" class="calculator-form-item-invalid-text">Aylık prim minumum 2€, maksimum 100000€ olmalıdır. Lütfen geçerli bir değer giriniz.</small>
                     </div>
                     <!--
