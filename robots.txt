@@ -1,0 +1,3 @@
+Sitemap: https://almanyamaas.com/sitemap.xml
+User-agent:*
+Disallow:
