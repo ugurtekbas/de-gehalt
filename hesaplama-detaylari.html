@@ -19,6 +19,7 @@
             gtag('config', 'G-XKTJ7P6XG4', { 'anonymize_ip': true, 'allow_google_signals': false, 'allow_ad_personalization_signals': false });
         </script>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.1/echarts.min.js" integrity="sha512-OTbGFYPLe3jhy4bUwbB8nls0TFgz10kn0TLkmyA+l3FyivDs31zsXCjOis7YGDtE2Jsy0+fzW+3/OVoPVujPmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -221,6 +222,23 @@
                         </tbody>
                     </table>
                 </div>
+
+                <div class="result-share-container">
+                    <h5>Hesap detaylarını paylaş!</h5>
+                    <p>Hesap linkini kopyalayıp dilediğiniz gibi paylaşabilirsiniz.</p>
+                    <div class="result-share-container-line"> 
+                        <input disabled id="inputTaxFree" type="text" class="result-share-container-line-link-input" value="https://almanyamaas.com/hesaplama-detaylari.html?bruttoeinkommen&rentenversicherung.....">
+                        <!-- <button  type="button" class="result-share-container-line-link-button">Kopyala</button> -->
+                        <button id="buttonCopyLink" type="button" class="result-share-container-line-link-button">Kopyala</button>
+                    </div>
+                </div>
+
+                <div id="divYearlyChart" class="calculator-chart-container">
+
+                </div>
+                <div id="divMonthlyChart" class="calculator-chart-container">
+
+                </div>
                 <div class="calculator-form-item-wrapper">
                     <button id="buttonResultBack" type="button" class="btn btn-primary btn-lg calculator-form-item-back-button">Hesap makinasına dön</button>
                 </div>
@@ -272,6 +290,7 @@
             </div>
         </div>
         
+        <script src="js/chart.min.js"></script>
         <script src="js/calc.min.js"></script>
         <script src="js/cookie.min.js"></script>
         <script src="js/result.min.js"></script>
