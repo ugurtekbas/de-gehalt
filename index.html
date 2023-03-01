@@ -279,6 +279,37 @@
                         <input id="inputHealthInsuranceMonthlyFee" inputmode="numeric" type="number" value="0" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="form-text form-control calculator-form-item-text">
                         <small id="textHealthInsuranceMonthlyFeeInvalid" class="calculator-form-item-invalid-text">Aylık prim minumum 2€, maksimum 100000€ olmalıdır. Lütfen geçerli bir değer giriniz.</small>
                     </div>
+                    <div class="calculator-form-item-wrapper formbuilder-select form-group">
+                        <div class="tooltip-line"><label for="selectState" class="calculator-form-item-label formbuilder-select-label">Sektör <small> (isteğe bağlı) </small></label></div>
+                        <select class="form-control calculator-form-item-select" id="selectSector">
+                            <option value="" selected="true">Çalıştığınız sektörü seçiniz</option>
+                            <option value="danismanlik">Danışmanlık</option>
+                            <option value="egitim">Eğitim</option>
+                            <option value="eglence">Eğlence</option>
+                            <option value="elektrik-elektronik">Elektrik ve Elektronik</option>
+                            <option value="finans">Finans</option>
+                            <option value="gida">Gıda</option>
+                            <option value="hizmet">Hizmet</option>
+                            <option value="hizli-tuketim">Hızlı Tüketim</option>
+                            <option value="is-yonetim">İş ve Yönetim</option>
+                            <option value="insaat">İnşaat</option>
+                            <option value="teknoloji">İnternet ve Bilişim Teknolojileri</option>
+                            <option value="medya-yayincilik">Medya, İletişim ve Yayıncılık</option>
+                            <option value="saglik-sosyal-hizmetler">Sağlık ve Sosyal Hizmetler</option>
+                            <option value="spor-rekreasyon">Spor ve Rekreasyon</option>
+                            <option value="tarim">Tarım</option>
+                            <option value="tekstil">Tekstil</option>
+                            <option value="ticaret">Ticaret</option>
+                            <option value="turizm">Turizm</option>
+                            <option value="ulastirma-lojistik-haberlesme">Ulaştırma, Lojistik ve Haberleşme</option>
+                            <option value="diger">Diğer</option>
+                        </select>
+                    </div>
+                    <div class="calculator-form-item-wrapper formbuilder-text form-group">
+                        <div class="tooltip-line"><label id="labelJobTitle" for="inputJobTitle" class="calculator-form-item-label form-label formbuilder-text-label">Ünvan <small> (isteğe bağlı) </small></label></div>
+                        <input id="inputJobTitle" class="form-control calculator-form-item-text" type="text" maxlength="99">
+                        
+                    </div>
                     <!--
                     <div class="calculator-form-item-wrapper">
                         <label for="selectPension" class="calculator-form-item-label formbuilder-select-label">Emeklilik sigortası</label>
