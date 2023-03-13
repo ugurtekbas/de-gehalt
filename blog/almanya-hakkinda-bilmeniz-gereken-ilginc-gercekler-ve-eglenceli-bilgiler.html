@@ -4,10 +4,12 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="js/disable.min.js"></script>
+        <!--build:js js/disable.min.js -->
+        <script src="../js/disable.min.js"></script> 
+        <!-- endbuild -->
         
-        <title>Almanya Maaş Hesapla | Almanya maaş hesabı detayları. Almanya neet maaş, vergiler ve sosyal katkılarınızı detaylı şekilde görün.</title>
-        <meta name="description" content="Almanya maaş hesaplama aracı ile net maaşınızı kolayca hesaplayın. Almanya'daki brütten nete maaşınızı, gelir vergisi ödemelerinizi ve sosyal sigorta bilgilerinizi hızlı ve doğru şekilde öğrenin." />
+        <title>Almanya Hakkında Bilmeniz Gereken İlginç Gerçekler ve Eğlenceli Bilgiler</title>
+        <meta name="description" content="Almanya, derin tarihi ve renkli kültürüyle insanları şaşırtmayı başarıyor. Bu yazıda Almanya'nın renkli ve az bilinen yönlerine değiniyoruz.." />
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-XKTJ7P6XG4"></script>
@@ -18,60 +20,43 @@
 
             gtag('config', 'G-XKTJ7P6XG4', { 'anonymize_ip': true, 'allow_google_signals': false, 'allow_ad_personalization_signals': false });
         </script>
-        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.1/echarts.min.js" integrity="sha512-OTbGFYPLe3jhy4bUwbB8nls0TFgz10kn0TLkmyA+l3FyivDs31zsXCjOis7YGDtE2Jsy0+fzW+3/OVoPVujPmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
         <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
         <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css" rel="stylesheet">
-        <link rel="canonical" href="https://almanyamaas.com/hesaplama-detaylari.html" />
+        <link rel="canonical" href="https://almanyamaas.com/blog/almanya-hakkinda-bilmeniz-gereken-ilginc-gercekler-ve-eglenceli-bilgiler.html" />
 
         <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png?v=2">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png?v=2">
-        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png?v=2">
-        <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
-        <link rel="manifest" href="site.webmanifest?v=2">
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png?v=2">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png?v=2">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png?v=2">
+        <link rel="icon" type="image/png" sizes="192x192" href="../images/android-chrome-192x192.png">
+        <link rel="manifest" href="../site.webmanifest?v=2">
         <!-- <link rel="mask-icon" href="images/safari-pinned-tab.svg?v=2" color="#990000"> -->
-        <link rel="shortcut icon" href="images/favicon.ico?v=2">
+        <link rel="shortcut icon" href="../images/favicon.ico?v=2">
         <meta name="msapplication-TileColor" content="#00aba9">
         <meta name="msapplication-TileImage" content="images/mstile-144x144.png?v=2">
         <meta name="theme-color" content="#ffffff">
         <!-- Favicons -->
 
-        <link rel="stylesheet" href="css/styles.min.css">
+        <!--build:css css/styles.min.css-->
+        <link href="../css/styles.min.css" rel="stylesheet" />
+        <!--endbuild-->
     </head>
     <body>
         <header>
             <div class = "header-container-new">
                 <div class="header-title">
-                    <a href="./" class="header-nav-link">&#127465;&#127466;  ALMANYA MAAŞ  &#128182;</a>
+                    <a href="../" class="header-nav-link">&#127465;&#127466;  ALMANYA MAAŞ  &#128182;</a>
                 </div>
                 <div class="header-about">
-                    <a href="./pages/hakkimda.html" class="header-about-nav-link">Hakkımda</a>
+                    <a href="../pages/hakkimda.html" class="header-about-nav-link">Hakkımda</a>
                 </div>
             </div>
         </header>
     <main>
-        <div class="ez-banners">
-        </div>
-        <!-- Mobile Ad banner above results -->
-        <div id='mobileAdBannerBelowResult' class="banners">
-            <a 
-                onclick="gtag('event', 'Moving ad banner click', { 'event_category': 'Link click', 'event_label': 'Moving-Ad-Banner-Link-Top', 'value': 1 })"
-                target="_blank"
-                href="https://almanyayatasinmak.com"
-            >
-                <div class="banners-inside">
-                    <p class="banner-title">Almanya'ya taşınırken yapman gerekenleri adım adım bu kitaptan takip et</p>
-                    <p class="banner-download-copy">İndirimli fiyattan almak için tıkla!</p>
-                </div>
-            </a>
-        </div>
-        
         <div class="buy-me-coffee-container">
             <a href="https://www.buymeacoffee.com/almanyamaas" target="_blank" rel="noreferrer" class="buymeacoffee">
                 <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 0 234 50" fill="none">
@@ -100,14 +85,24 @@
                 </svg>
             </a>
         </div>
-        <div id="divResultContainer" class="result-container">
+        <!-- Mobile Ad banner top of form -->
+        <div class="banners">
+            <a 
+                onclick="gtag('event', 'Moving ad banner click', { 'event_category': 'Link click', 'event_label': 'Moving-Ad-Banner-Link-Top', 'value': 1 })"
+                target="_blank"
+                href="https://almanyayatasinmak.com"
+            >
+                <div class="banners-inside">
+                    <p class="banner-title">Almanya'ya taşınmak hakkında tüm detaylar bu kitapta</p>
+                    <p class="banner-download-copy">İndirimli fiyattan almak için tıkla!</p>
+                </div>
+            </a>
+        </div>
 
-            <div class="ez-sky-banners">
-            </div>
-            <!-- Desktop Ad banner left of results -->
+        <div class="blog-post-container">
             <div class="sky-banners">
                 <a 
-                    onclick="gtag('event', 'Moving ad banner click', { 'event_category': 'Link click', 'event_label': 'Moving-Ad-Banner-Link-Right', 'value': 1 })"
+                    onclick="gtag('event', 'Moving ad banner click', { 'event_category': 'Link click', 'event_label': 'Moving-Ad-Banner-Link-Left', 'value': 1 })"
                     target="_blank"
                     href="https://almanyayatasinmak.com"
                 >
@@ -117,184 +112,96 @@
                     </div>
                 </a>
             </div>
-            <div class="result-container-wrapper">
-                <div class="result-monthly-salary-copy">
-                    <h5>Aylık net maaşınız: <span id="spanResultMonthlySalaryCopy" class="result-monthly-salary-copy-amount"><b>€4.4040,23</b></span></h5>    
-                </div>
-                <hr class="result-line-copy">
-                <h4>Hesap Detayı:</h4>
-                <hr class="result-line">
-                <div class="callout success">
-                    <table class="steuerbescheid nostyle smallstack table table-hover">
-                        <thead>
-                            <tr>
-                                <th class="" width="50%"></th>
-                                <th class="" width="25%">Aylık (€)</th>
-                                <th class="" width="25%">Yıllık (€)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class=""><b>Brüt maaş:</b></td>
-                                <td class="">
-                                    <span class="result-table-data-period"></span>
-                                    <b id="resultGrossMonthlySalary"></b>
-                                </td>
-                                <td class=" ">
-                                    <span class="result-table-data-period"></span>
-                                    <b id="resultGrossYearlySalary"></b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="result-table-data-title" colspan="3"><b>Sosyal güvenlik katkıları:</b></td>
-                            </tr>
-                            <tr>
-                                <td class=""> - Emeklilik Sigortası</td>
-                                <td id="resultMonthlyPension" class=" ">
-                                    <span class="result-table-data-period">Aylık</span>
-                                </td>
-                                <td id="resultYearlyPension" class=" ">
-                                    <span class="result-table-data-period">Yıllık</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class=""> - İşsizlik sigortası</td>
-                                <td id="resultMonthlyUnemployment" class="">
-                                    <span class="result-table-data-period">Aylık</span>
-                                </td>
-                                <td id="resultYearlyUnemployment" class="">
-                                    <span class="result-table-data-period">Yıllık</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class=""> - Bakım sigortası</td>
-                                <td id="resultMonthlyNursing" class="">
-                                    <span class="result-table-data-period">Aylık</span>
-                                </td>
-                                <td id="resultYearlyNursing" class=" ">
-                                    <span class="result-table-data-period">Yıllık</span>
-                                </td>
-                            </tr>
-                            <tr id="tr_krankenversicherung">
-                                <td class=""> - Sağlık sigortası</td>
-                                <td id="resultMonthlyHealth" class=" ">
-                                    <span class="result-table-data-period">Aylık</span>
-                                </td>
-                                <td id="resultYearlyHealth" class=" ">
-                                    <span class="result-table-data-period">Yıllık</span>
-                                </td>
-                            </tr>
-                            <tr class="result-table-row-sum-line rechner_ergebniszeile">
-                                <td class=""><b>Toplam sosyal güvenlik katkısı:</b></td>
-                                <td class=" ">
-                                    <span class="result-table-data-period"></span>
-                                    <b id="resultMonthlyTotalSocial"></b>
-                                </td>
-                                <td class="">
-                                    <span class="result-table-data-period"></span>
-                                    <b id="resultYearlyTotalSocial"></b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="result-table-data-title" colspan="3"><b>Vergiler:</b></td>
-                            </tr>
-                            <tr>
-                                <td class=""> - Gelir vergisi</td>
-                                <td id="resultMonthlyIncomeTax" class="">
-                                    <span class="result-table-data-period">Aylık</span>
-                                </td>
-                                <td id="resultYearlyIncomeTax" class=" ">
-                                    <span class="result-table-data-period">Yıllık</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class=""> - Doğu Almanya dayanışma vergisi</td>
-                                <td id="resultMonthlySolidarityTax" class=" ">
-                                    <span class="result-table-data-period">Aylık</span>
-                                </td>
-                                <td id="resultYearlySolidarityTax" class=" ">
-                                    <span class="result-table-data-period">Yıllık</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class=""> - Kilise vergisi</td>
-                                <td id="resultMonthlyChurchTax" class="">
-                                    <span class="result-table-data-period">Aylık</span>
-                                </td>
-                                <td id="resultYearlyChurchTax" class="">
-                                    <span class="result-table-data-period">Yıllık</span>
-                                </td>
-                            </tr>
-
-                            <tr id="tr_steuern" class="result-table-row-sum-line">
-                                <td class=""><b>Toplam vergiler:</b></td>
-                                <td class="">
-                                    <span class="result-table-data-period"></span>
-                                    <b id="resultMonthlyTotalTax"></b>
-                                </td>
-                                <td class="">
-                                    <span class="result-table-data-period"></span>
-                                    <b id="resultYearlyTotalTax"></b>
-                                </td>
-                            </tr>
-                            
-                            <tr class="result-table-last-row">
-                                <td class="result-table-data-title"><h5>Net maaş:</h5></td>
-                                <td class="">
-                                    <span class="result-table-data-period"></span>
-                                    <b id="resultMonthlyNetSalary"></b>
-                                </td>
-                                <td class="">
-                                    <span class="result-table-data-period"></span>
-                                    <b id="resultYearlyNetSalary"></b>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="result-share-container">
-                    <h5>Hesap detaylarını paylaş!</h5>
-                    <p>Hesap linkini kopyalayıp dilediğiniz gibi paylaşabilirsiniz.</p>
-                    <div class="result-share-container-line"> 
-                        <input disabled id="inputTaxFree" type="text" class="result-share-container-line-link-input" value="https://almanyamaas.com/hesaplama-detaylari.html?bruttoeinkommen&rentenversicherung.....">
-                        <!-- <button  type="button" class="result-share-container-line-link-button">Kopyala</button> -->
-                        <button id="buttonCopyLink" type="button" class="result-share-container-line-link-button">Kopyala</button>
+            <div id="divGlossaryWrapper" class="blog-post-container-wrapper">
+                <div class="blog-post-section">
+                    <h1>
+                        Almanya Hakkında Bilmeniz Gereken İlginç Gerçekler ve Eğlenceli Bilgiler
+                    </h1>
+                    <div class="blog-post-info">
+                        <span>13 Mart 2023</span>
                     </div>
+                    <p>
+                        Almanya derin bir çeşitliliğe sahip, sürekli sizi şaşırtabilecek potansiyele sahip bir ülke. Spordan tarihe, dilden müziğe, yemek kültüründen teknolojiye kadar, uzun yıllardır orada yaşayan insanlar için bile her zaman keşfedilecek yeni bir şeyler var.
+                    </p>
+                    <p>
+                        Tabi ki her ülke kendine özgü bir kültüre sahip, ancak <b>Lederhosen</b> ve <b>Oktoberfest</b> gibi kelimeleri başka yerlerde duymanız çok küçük bir ihtimal.
+                    </p>
+                </div>
+                <div class="blog-post-section">
+                    <h4>
+                        Almanya nasıl ve ne zaman bir ülke oldu?
+                    </h4>
+                    <p>
+                        Bugün Almanya olarak bilinen topraklar yakın zamana kadar, küçük parçalara bölünmüş şekilde, krallıklardan ve şehir devletlerinden oluşuyordu. 1871 yılında Prusya ve diğer devletlerin birleşmesiyle <b>Alman İmparatorluğu</b> kurulmuş oldu. İmparatorluğun ilk şansölyesi Otto von Bismarck oldu. Bismarck, Almanya devletlerinin birleşmesinde, ilerlemesinde ve dünya sahnesine çıkmasında en büyük paya sahip isim olarak görülüyor. 
+                    </p>
+                    <p>
+                        İkinci Dünya Savaşı'nın doğurduğu sonuçlardan birisi olarak; ülkenin batı kısmında Batı Almanya (ya da Federal Almanya Cumhuriyeti), doğu kısmında ise Alman Demokratik Cumhuriyeti kurulmuş, böylece ülke resmi olarak ikiye ayrılmıştır. 1989 yılında Berlin duvarının yıkılmasının ardından iki ülke birleşmiş ve resmi olarak <b>Almanya Federal Cumhuriyeti'ni</b> oluşturmuşlardır. 
+                    </p>
+                    <p>
+                        Devletleşme serüveni sadece bir asırdan biraz sürmüş olsa da, Alman ulusu aynı dilleri, hikayeleri, gelenekleri paylaşmaya binlerce yıldır devam etmektedir.
+                    </p>
+                    <h4>
+                        Bir Alman hobisi: Verimlilik
+                    </h4>
+                    <p>
+                        Komşu ülkelere nispeten, 357,578 km karelik yüz ölçümüyle Almanya büyük bir alanı kaplamaktadır. Bu rakam Türkiye yüzölçümünün yarısına tekabül etse de, iki ülke nüfusu da 80 milyon civarındadır.
+                    </p>
+                    <h4>
+                        Doğu ve Batı'nın incisi: Berlin
+                    </h4>
+                    <p>
+                        İkinci Dünya Savaşı'ndan sonraki belirsizlik içindeki dönemde bile Berlin paylaşılamayan bir şehir olmaya devam etmiş ve sonunda ülkenin geri kalanı gibi doğu ve batı diye ikiye ayrılmıştır. Bu eşsiz statüsünü, ülke birleştikten sonra da metropolitan ve özgürlükçü yapısı ile sürdürmüştür. 
+                    </p>
+                    <h4>
+                        Bir Alman Geleneği: Okumak
+                    </h4>
+                    <p>
+                        Almanya'da günlük yaşamda farkedeceğiniz şeylerden birisi de muhakkah herkesin bir şeyler okuduğudur. Kitap, dergi, gazete, Twitter, tren sefer programı, herkesin eline ne geçerse okuduğunu görebilirsiniz. 1450 yılında hareketli metal harflerin kullanıldığı bir baskı sisteminin Johannes Gutenberg kurulmasıyla, matbaanın icadı da Almanya'da gerçekleşmiştir.
+                    </p>
+                    <h4>
+                        Almanya'nın resmi içeceği: Bira
+                    </h4>
+                    <p>
+                        Nesiller boyunca bira, Almanların en çok tükettiği içecek olmuştur. Dünyanın en eski bira fabrikası Weihenstephan Abbey, 1040'tan beri biralarını üretmeye devam etmektedir. Almanlar ayrıca her yıl kişi başı 104 litre bira tüketerek, dünyada 4. sırada yer almaktadır. Bu kadar çok tüketilirken elbette bira üretimi Almanya'da, diğer birçok şeyin yanı sıra, çok ciddiye alınmaktadır. Üretimi yapılan içeceğin 'bira' olarak adlandırabilmek için bile uzun bir kurallar listesini takip etmeniz gerekiyor.
+                    </p>
+                    <h4>
+                        7. Alman harikası: Ekmek
+                    </h4>
+                    <p>
+                        Ülkedeki 17 bin fırın ve 600'den farklı ekmek çeşidiyle, Almanya ekmek üretimini başka bir boyuta çıkarmaktadır. Dünyada en çok ekmek tüketen ülke Türkiye olurken, Almanya ekmek üretimine bir sanat olarak görmektedir.
+                    </p>
+                    <h4>
+                        Alman tutkusu olarak: Futbol
+                    </h4>
+                    <p>
+                        Bira, ekmek... ha bir de futbol. Almanya'nın kutsal üçlüsü olarak tanımlasak yanlış olmaz sanırım. 6 milyondan fazla üyesi olan 26 bin futbol külübü ve 4 dünya şampiyonluğu ile Almanya furbol konusunu da ne kadar ciddiye aldığını gösteriyor.
+                    </p>
+                    <h4>
+                        Avrupa'nın ara katı
+                    </h4>
+                    <p>
+                        Kıta Avrupa'sındaki merkezi konumu itibariyle Almanya bir çok ülkeye komşu bulunmaktadır. Doğuda Polonya, Çekya, Avusturya, kuzeyde Danimarka, güneyde İsviçre, batıda Hollanda, Belçika, Lüksemburg ve Fransa olmak üzere tam 9 ülke ile sınır komşusudur.
+                    </p>
                 </div>
 
-                <!--
-                <div id="divYearlyChart" class="calculator-chart-container">
-
-                </div>
-                <div id="divMonthlyChart" class="calculator-chart-container">
-
-                </div>
-                -->
-                <div class="calculator-form-item-wrapper">
-                    <button id="buttonResultBack" type="button" class="btn btn-primary btn-lg calculator-form-item-back-button">Hesap makinasına dön</button>
+                <div class="blog-post-section"></div>
+                    <p>
+                        
+                    </p>
                 </div>
             </div>
-            
-            <!-- Desktop Ad banner right of results -->
             <div class="sky-banners">
                 <a 
-                    onclick="gtag('event', 'Moving ad banner click', { 'event_category': 'Link click', 'event_label': 'Moving-Ad-Banner-Link-Right', 'value': 1 })"
+                    onclick="gtag('event', 'Moving ad banner click', { 'event_category': 'Link click', 'event_label': 'Moving-Ad-Banner-Link-Left', 'value': 1 })"
                     target="_blank"
                     href="https://almanyayatasinmak.com"
                 >
                     <div class="sky-banners-inside">
-                        <p class="banner-title">Almanya'ya taşınırken yapman gerekenleri adım adım bu kitaptan takip et</p>
+                        <p class="banner-title">Almanya'ya taşınmak hakkında tüm detaylar bu kitapta</p>
                         <p class="banner-download-copy">İndirimli fiyattan almak için tıkla!</p>
                     </div>
                 </a>
             </div>
-
-            <div class="ez-sky-banners">
-            </div>
-        </div>
-        
-        <div class="ez-banners">
         </div>
     </main>
 
@@ -308,26 +215,22 @@
                             </script>
                         </span>
                     </li>
-                    <li class="footer-list-item push-left"><a href="./pages/hakkimda.html">Hakkımda</a></li>
-                    <li class="footer-list-item footer-link"><a href="./pages/gizlilik.html">Gizlilik</a></li>
-                    <li class="footer-list-item footer-link"><a href="./pages/almanya-maas-hesaplama-araci-hakkinda.html">Hesaplama Aracı Hakkında</a></li>
+                    <li class="footer-list-item push-left"><a href="../pages/hakkimda.html">Hakkımda</a></li>
+                    <li class="footer-list-item footer-link"><a href="../pages/gizlilik.html">Gizlilik</a></li>
+                    <li class="footer-list-item footer-link"><a href="../pages/almanya-maas-hesaplama-araci-hakkinda.html">Hesaplama Aracı Hakkında</a></li>
                 </ul>
             </section>
         </footer>
 
         <div id="cookie-banner" class="cookie-container">
             <div class="cookie">
-                <div class="cookie-text">Sitemizde çerezler tamamen istatiksel amaçlı kullanılmaktadır, daha fazla bilgiye <a href="pages/gizlilik.html">gizlilik</a> sayfamızdan ulaşabilirsiniz.</div>
+                <div class="cookie-text">Sitemizde çerezler tamamen istatiksel amaçlı kullanılmaktadır, daha fazla bilgiye <a href="./gizlilik.html">gizlilik</a> sayfamızdan ulaşabilirsiniz.</div>
                 <div id="cookie-close" class="cookie-button">X</div>
             </div>
         </div>
         
-        <script src="js/db.min.js"></script>
-        <script src="js/chart.min.js"></script>
-        <script src="js/calc.min.js"></script>
-        <!--
-        <script src="js/cookie.js"></script> -->
+        <!--build:js js/cookie.min.js -->
+        <script src="../js/cookie.min.js"></script> 
         <!-- endbuild -->
-        <script src="js/result.min.js"></script>
     </body>
 </html>
