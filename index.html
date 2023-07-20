@@ -69,7 +69,26 @@
         <div class="ez-banners">
         </div>
         <!-- Mobile Ad banner top of form -->
-        <div class="banners">
+        <div class="newsletter-banner">
+            <div id="newsletter-wrapper" class="newsletter-banner-wrapper">
+                <h4 id="newsletter-title" class="">Almanya ile alakalı yazılar!</h4>
+                <p id="newsletter-subtitle" class="">Almanya'da yaşamak ile ilgili en özel ve detaylı yazılar posta kutunda.</p>
+                
+                <p id="newsletter-error" class="generic-error">Adresiniz kaydedilemedi, lütfen tekrar deneyin.</p>
+                <p id="newsletter-email-error" class="generic-error">Lütfen geçerli bir e-post adresi giriniz.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input id="newsletter-email-input" class="newsletter-email" placeholder="E-posta adresin" name="EMAIL" type="email">
+                    <button id="newsletter-signup-btn" type="button" class="newsletter-sign-up" onclick="onSignupClick();"><span>Ücretsiz Kaydol</span></button> 
+                </form>
+            </div>
+            <div id="success-section" class="success-animation">
+                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"></circle>
+                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path>
+                </svg>
+                <p class="">Teşekkürler, kaydın başarıyla tamamlandı. E-posta gelen kutunu kontrol etmeyi unutma!</p>
+            </div>
+            <!--
             <a 
                 onclick="gtag('event', 'Moving ad banner click', { 'event_category': 'Link click', 'event_label': 'Moving-Ad-Banner-Link-Top', 'value': 1 })"
                 target="_blank"
@@ -80,8 +99,11 @@
                     <p class="banner-download-copy">İndirimli fiyattan almak için tıkla!</p>
                 </div>
             </a>
+            -->
         </div>
+        <!-- End of Mobile Ad banner above results -->
 
+        <!--
         <div class="buy-me-coffee-container">
             <a href="https://www.buymeacoffee.com/almanyamaas" target="_blank" rel="noreferrer" class="buymeacoffee">
                 <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 0 234 50" fill="none">
@@ -110,21 +132,10 @@
                 </svg>
             </a>
         </div>
+        -->
         
         <div class="calculator-container">
             <div class="ez-sky-banners">
-            </div>
-            <div class="sky-banners">
-                <a 
-                    onclick="gtag('event', 'Moving ad banner click', { 'event_category': 'Link click', 'event_label': 'Moving-Ad-Banner-Link-Left', 'value': 1 })"
-                    target="_blank"
-                    href="https://almanyayatasinmak.com"
-                >
-                    <div class="sky-banners-inside">
-                        <p class="banner-title">Almanya'ya taşınmak hakkında tüm detaylar bu kitapta</p>
-                        <p class="banner-download-copy">İndirimli fiyattan almak için tıkla!</p>
-                    </div>
-                </a>
             </div>
 
             <div class="calculator-container-wrapper">
@@ -271,13 +282,13 @@
                     <div id="divHealthInsuranceRate" class="calculator-form-item-wrapper form-group">
                         <div class="tooltip-line"><label id="labelHealthInsuranceRate" for="inputHealthInsuranceRate" class="calculator-form-item-label form-label formbuilder-text-label">Sağlık Sigortası Katkı Payı (%)</label><i id="iconHealthInsuranceRate" class="bi bi-info-circle tooltip-line-icon"></i></div>
                         <input id="inputHealthInsuranceRate" inputmode="decimal" type="number" value="14.6" class="form-text form-control calculator-form-item-text-percent" step=".01">
-                        <small id="textHealthInsuranceRateInvalid" class="calculator-form-item-invalid-text">Katkı payı minumum %14,6, maksimum %18 olmalıdır. Lütfen geçerli bir değer giriniz.</small>
+                        <small id="textHealthInsuranceRateInvalid" class="calculator-form-item-invalid-text">Katkı payı minimum %14,6, maksimum %18 olmalıdır. Lütfen geçerli bir değer giriniz.</small>
                     </div>
 
                     <div id="divHealthInsuranceMonthlyFee" class="calculator-form-item-wrapper form-group hidden">
                         <div class="tooltip-line"><label id="labelHealthInsuranceMonthlyFee" for="inputHealthInsuranceMonthlyFee" class="calculator-form-item-label form-label formbuilder-text-label">Aylık Prim (€)</label><i id="iconHealthInsuranceMonthlyFee" class="bi bi-info-circle tooltip-line-icon"></i></div>
                         <input id="inputHealthInsuranceMonthlyFee" inputmode="numeric" type="number" value="0" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="form-text form-control calculator-form-item-text">
-                        <small id="textHealthInsuranceMonthlyFeeInvalid" class="calculator-form-item-invalid-text">Aylık prim minumum 2€, maksimum 100000€ olmalıdır. Lütfen geçerli bir değer giriniz.</small>
+                        <small id="textHealthInsuranceMonthlyFeeInvalid" class="calculator-form-item-invalid-text">Aylık prim minimum 2€, maksimum 100.000€ olmalıdır. Lütfen geçerli bir değer giriniz.</small>
                     </div>
                     <div class="calculator-form-item-wrapper formbuilder-select form-group">
                         <div class="tooltip-line"><label for="selectState" class="calculator-form-item-label formbuilder-select-label">Sektör <small> (isteğe bağlı) </small></label></div>
@@ -358,7 +369,9 @@
         
         <div class="ez-banners">
         </div>
+        
         <!-- Mobile Ad banner above results -->
+        <!--
         <div id='mobileAdBannerBelowResult' class="banners">
             <a 
                 onclick="gtag('event', 'Moving ad banner click', { 'event_category': 'Link click', 'event_label': 'Moving-Ad-Banner-Link-Top', 'value': 1 })"
@@ -371,6 +384,9 @@
                 </div>
             </a>
         </div>
+        -->
+        <!-- End of Mobile Ad banner above results -->
+        
         
         <div id="divResultContainer" class="result-container">
 
@@ -742,6 +758,7 @@
         </div>
         
         <script src="js/db.min.js"></script>
+        <script src="js/ns.min.js"></script>
         <script src="js/calc.min.js"></script>
         <script src="js/validate.min.js"></script>
         <!--
