@@ -69,7 +69,7 @@
         <div class="ez-banners">
         </div>
         <!-- Mobile Ad banner top of form -->
-        <div class="newsletter-banner">
+        <div id="mobile-newsletter-banner" class="newsletter-banner">
             <div id="newsletter-wrapper" class="newsletter-banner-wrapper">
                 <h4 id="newsletter-title" class="">Almanya ile alakalı yazılar!</h4>
                 <p id="newsletter-subtitle" class="">Almanya'da yaşamak ile ilgili en özel ve detaylı yazılar posta kutunda.</p>
@@ -136,6 +136,9 @@
         
         <div class="calculator-container">
             <div class="ez-sky-banners">
+            </div>
+            
+            <div class="fake-newsletter-banner">
             </div>
 
             <div class="calculator-container-wrapper">
@@ -347,6 +350,27 @@
                         <button id="buttonCalculate" type="button" class="btn btn-primary btn-lg calculator-form-item-button">Hesapla</button>
                     </div>
                     
+                </div>
+            </div>
+
+            <div id="desktop-newsletter-banner" class="tablet-newsletter-banner">
+                <div id="newsletter-wrapper" class="newsletter-banner-wrapper">
+                    <h4 id="newsletter-title" class="">Almanya ile alakalı yazılar!</h4>
+                    <p id="newsletter-subtitle" class="">Almanya'da yaşamak ile ilgili en özel ve detaylı yazılar posta kutunda.</p>
+                    
+                    <p id="newsletter-error" class="generic-error">Adresiniz kaydedilemedi, lütfen tekrar deneyin.</p>
+                    <p id="newsletter-email-error" class="generic-error">Lütfen geçerli bir e-post adresi giriniz.</p>
+                    <form id="newsletter-form" class="newsletter-form">
+                        <input id="newsletter-email-input" class="newsletter-email" placeholder="E-posta adresin" name="EMAIL" type="email">
+                        <button id="newsletter-signup-btn" type="button" class="newsletter-sign-up" onclick="onSignupClick();"><span>Ücretsiz Kaydol</span></button> 
+                    </form>
+                </div>
+                <div id="success-section" class="success-animation">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"></circle>
+                        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path>
+                    </svg>
+                    <p class="">Teşekkürler, kaydın başarıyla tamamlandı. E-posta gelen kutunu kontrol etmeyi unutma!</p>
                 </div>
             </div>
 
